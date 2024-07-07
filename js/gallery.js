@@ -98,11 +98,7 @@ container.addEventListener('click', (event) => {
   const instance = basicLightbox.create(`
    <div class="modal">
       <img src="${sourceObj.original}" alt="${sourceObj.description}"/>
-    </div>`, {
-    onShow: (instance) => {
-      instance.element().querySelector(".modal").onclick = instance.close
-    }
-  });
+    </div>`);
    
   instance.show();
 });
